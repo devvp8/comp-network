@@ -21,9 +21,6 @@ class_=class_+"E"
 subnet_mask="Reserved"
 else:
 print("Enter a correct ip address")
-Department of Computer Engineering
-Class: S.Y. B.Tech. Semester: IV
-Course Code: DJ19CEL405 Course Name: Computer Networks Lab
 def logand(ipl,mask):
 subnet_add = ""
 mask = mask.split(".")
