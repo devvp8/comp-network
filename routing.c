@@ -35,7 +35,6 @@ void printRoutingTable() {
         }
         printf("\n");
     }
-    printf("--------------------------------------\n");
 }
 
 void distanceVectorRouting() {
@@ -62,6 +61,12 @@ void distanceVectorRouting() {
 int main() {
     distanceVectorRouting();
     printRoutingTable();
+    
+    int source = 0;
+    int destination = 4;
+    int shortest_distance = routingTable[source][destination];
+    
+    printf("Shortest distance from node %d to node %d is %d\n", source, destination, shortest_distance);
     
     return 0;
 }
