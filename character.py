@@ -1,4 +1,4 @@
-f = int (input ("Total frames : "))
+tf = int (input ("Total frames : "))
 stuffed =""
 frames =[input ("Enter the frame : ") for i in range (tf)]
 for i in frames:
