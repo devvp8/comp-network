@@ -1,16 +1,16 @@
 def characterstuff(sflag,eflag,esc,x):
-stuffed = ""
-data = []
-x1 = x1.split()
-data.append(sflag)
-for i in x1:
-   if(i==sflag or i ==eflag):data.append(esc)
-   elif(i==esc):data.append(esc)
-   data.append(i)
-data.append(eflag)
-for i in data:
-stuffed+=i
-return stuffed
+    stuffed = ""
+    data = []
+    data.append(sflag)
+    for i in x: 
+        if(i==sflag or i ==eflag):data.append(esc)
+        elif(i==esc):data.append(esc)
+        data.append(i)
+    data.append(eflag)  
+    for i in data:
+        stuffed+=i
+    return stuffed
+
 sflag = input("Enter the start flag : ")
 eflag = input("Enter the end flag : ")
 esc = input("Enter the escape character : ")
